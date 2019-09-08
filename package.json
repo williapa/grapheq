@@ -1,0 +1,30 @@
+{
+  "name": "grapheq",
+  "version": "1.0.0",
+  "description": "A graphic equalizer project for dope ass youtube videos bro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williapa/grapheq.git"
+  },
+  "keywords": [
+    "webAudioAPI",
+    "canvas2d",
+    "javascript",
+    "animation",
+    "graphic",
+    "equalizer"
+  ],
+  "author": "Paul Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williapa/grapheq/issues"
+  },
+  "homepage": "https://github.com/williapa/grapheq#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
