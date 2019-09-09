@@ -41,7 +41,11 @@ and have lyrics become animated instead. (you may want to use the timeout approa
 - use animator in clock (one way)
 - Create "home page" text input that lets you type a file name 
 - Similar controls to select an equalizer mode or draw Script
-- (beat detection)[http://joesul.li/van/beat-detection-using-web-audio/]
-- (more help)[https://stackoverflow.com/questions/30110701/how-can-i-use-js-webaudioapi-for-beat-detection]
+- [beat detection](http://joesul.li/van/beat-detection-using-web-audio/)
+- [more help](https://stackoverflow.com/questions/30110701/how-can-i-use-js-webaudioapi-for-beat-detection)
 - drag and drop audio?
+- equalizer bar shape options (do a proper growing parabola, try and copy some other styles)
+- configurable EQ continued - select bands to monitor / combine, set threshold for band and trigger bounce based on thresh
+- eq bar options - figure out better color control
+- make wave visualizer and add it to clock - width could grow in place of dark rectangle
 
