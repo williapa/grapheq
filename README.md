@@ -5,7 +5,7 @@ GraphEQ is my javascript graphic equalizer project with which to make cool visua
 
 this project uses [node.js.](https://nodejs.org/en/)
 
-after you git clone this repository, run
+after you clone this repository, run
 ```
 npm install 
 ```
@@ -36,8 +36,12 @@ If you are experimenting and would like to change the song, drop it in the root 
 If you are a normal person that doesn't just want to print emojis all over the screen, you can use that approach to modify "drawMoneyPrint" 
 and have lyrics become animated instead. (you may want to use the timeout approach, though instead of a step-oscillating animation for the change)
 
-### Future ideas:
-- Create "home page" play controls that let you browse your PC to select a song, as well as play / pause controls (and also track time!!!)
-- Similar controls to select a background image
-- Better control for 1 shot time changes
-- Better control for beat synced animation (this is done very inconsistently right now because framerate will vary based on your computer)
+### Future ideas
+
+- use animator in clock (one way)
+- Create "home page" text input that lets you type a file name 
+- Similar controls to select an equalizer mode or draw Script
+- (beat detection)[http://joesul.li/van/beat-detection-using-web-audio/]
+- (more help)[https://stackoverflow.com/questions/30110701/how-can-i-use-js-webaudioapi-for-beat-detection]
+- drag and drop audio?
+
