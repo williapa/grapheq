@@ -16,8 +16,7 @@ class Clock {
         fillColor = 'black', 
         backgroundColor = 'grey', 
         dimensions = defaultDimensions, 
-        position = defaultPosition, 
-        autoStart = false,
+        position = defaultPosition
     }) {
         this.seconds = 0;
         this.completionRatio = 0;
@@ -29,8 +28,7 @@ class Clock {
         this.backgroundColor = backgroundColor;
         this.dimensions = dimensions;
         this.position = position;
-        if (autoStart) this.start();
-    };
+    }
 
     draw(ctx) {
         ctx.save();
@@ -41,7 +39,7 @@ class Clock {
         ctx.fillRect(this.position.x, this.position.y, this.dimensions.width * this.completionRatio, 10);
         ctx.fillText(this.timeDisplay, this.position.x, this.position.y + 40);
         ctx.restore();
-    };
+    }
 
     updateTimeDisplay() {
         if (this.seconds < this.songLength) this.seconds = this.seconds + this.clockStepSize;
@@ -50,12 +48,14 @@ class Clock {
         const secondsMod = secondsFloor % 60;
         const secondHand = secondsMod < 10 ? `0${secondsMod}` : secondsMod;
         this.timeDisplay = `0${minutes}:${secondHand}`;
-    };
+    }
+
     intervalFn() {
         this.completionRatio = this.seconds / this.songLength;
         this.updateTimeDisplay();
-    };
+    }
+
     start() {
         setInterval(this.intervalFn.bind(this), this.clockStepSize * 1000);
-    };
-};
+    }
+}
